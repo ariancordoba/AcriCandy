@@ -1,0 +1,406 @@
+/* ESTILOS HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 25px -22px black;
+  z-index: 20;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a h2 {
+  color: #fff;
+  font-family: "Poppins", "Montserrat";
+  font-weight: 600;
+  margin: auto;
+  transition: 0.8s;
+}
+
+.logo a h2:hover {
+  transform: rotateY(360deg);
+  /* font-size: 2.2rem; */
+  transition: 0.8s;
+}
+
+.logo img {
+  width: 60px;
+  margin-left: 50px;
+}
+
+.menu {
+  height: 80px;
+  margin-right: 40px;
+}
+
+.menu nav {
+  height: 100%;
+}
+
+.menu nav ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.menu nav ul li {
+  height: 100%;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu nav ul li a {
+  color: #fdfdfd;
+  transition: color 300ms;
+}
+
+.menu nav ul li a i {
+  margin: 5px;
+}
+
+.menu nav ul li a:hover {
+  color: #cccbcb;
+  text-decoration: none;
+}
+
+#icon-menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  padding: 10px;
+  font-size: 20px;
+  background: #fafafa;
+  border-radius: 100%;
+  color: #787878;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+#icon-menu:hover {
+  opacity: 0.8;
+}
+
+/* Productos */
+
+.container-post {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.posts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+.post:hover {
+  box-shadow: 0 0 50px -10px black;
+}
+
+.posts .post {
+  background: #fff;
+  box-shadow: 0 0 20px -10px black;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.posts .post .ctn-img {
+  width: 100%;
+}
+
+.posts .post .ctn.img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.post h2 {
+  font-weight: 500;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  padding: 0px 15px;
+}
+
+.post p {
+  font-size: 14px;
+  margin: 0px 15px;
+  line-height: normal;
+}
+
+.ctn-tag {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.ctn-tag li {
+  list-style: none;
+  font-size: 14px;
+  margin: 5px;
+  padding: 6px 10px;
+  background: #e8e8e8;
+  cursor: default;
+}
+
+/* ESTILOS FOOTER */
+
+.container-footer {
+  width: 100%;
+  padding: 40px 0;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin-top: 40px;
+}
+
+.container-footer footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-footer footer .logo-footer {
+  text-align: center;
+}
+
+.container-footer .logo-footer h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Poppins", "Montserrat";
+  font-weight: 600;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.container-footer footer .redes-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-footer footer .redes-footer a {
+  text-decoration: none;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+  font-size: 20px;
+  background: #efefef;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+  transition: 0.3s;
+}
+
+.container-footer footer .redes-footer .fa-facebook-f:hover {
+  background: #3b5998;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover {
+  background: #c13584;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-footer footer .redes-footer .fa-handshake:hover {
+  background: #ecb731;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-footer footer .redes-footer .fa-youtube:hover {
+  background: #ff0000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-footer footer hr {
+  margin-top: 20px;
+  border: none;
+  height: 2px;
+  background: #a2a2a2;
+}
+
+.container-footer h4 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #d3d3d3;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1220px) {
+  .header-content,
+  .container-footer footer {
+    max-width: 1000px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 815px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-all {
+    transition: all 300ms;
+  }
+
+  .move-container-all {
+    transform: translateX(300px);
+  }
+
+  .menu {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    background: #fff;
+    overflow: hidden;
+    transform: translateX(-350px);
+    box-shadow: 10px 0px 20px -25px black;
+    transition: all 300ms;
+  }
+
+  #icon-menu {
+    display: flex;
+  }
+
+  .show-lateral {
+    width: 250px;
+    transform: translateX(0px);
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    margin-left: -50px;
+  }
+
+  .menu nav ul li {
+    max-width: 200px;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .menu nav ul li a {
+    margin-top: 40px;
+    color: #858585;
+  }
+
+  .menu nav ul li a i {
+    width: 20px;
+    display: inline-block;
+    margin-right: 18px;
+  }
+
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-all {
+    transition: all 300ms;
+  }
+
+  .move-container-all {
+    transform: translateX(220px);
+  }
+
+  .menu {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    background: #fff;
+    overflow: hidden;
+    transform: translateX(-350px);
+    box-shadow: 10px 0px 20px -25px black;
+    transition: all 300ms;
+  }
+
+  #icon-menu {
+    display: flex;
+  }
+
+  .show-lateral {
+    width: 180px;
+    transform: translateX(0px);
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    margin-left: -70px;
+  }
+
+  .menu nav ul li {
+    max-width: 200px;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .menu nav ul li a {
+    margin-top: 40px;
+    color: #858585;
+  }
+
+  .menu nav ul li a i {
+    width: 20px;
+    display: inline-block;
+    margin-right: 18px;
+  }
+
+  .posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
