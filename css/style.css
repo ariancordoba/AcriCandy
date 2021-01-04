@@ -375,7 +375,6 @@ header {
   .posts {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .posts .post .ctn-img img {
     width: 270px;
     height: 250px;
