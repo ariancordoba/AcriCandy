@@ -124,10 +124,6 @@ header {
   margin-top: 50px;
 }
 
-.post:hover {
-  box-shadow: 0 0 50px -10px black;
-}
-
 .posts .post {
   background: #fff;
   box-shadow: 0 0 20px -10px black;
@@ -140,10 +136,10 @@ header {
   width: 100%;
 }
 
-.posts .post .ctn.img img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; */
+.posts .post .ctn-img img {
+  width: 265px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .post h2 {
@@ -277,9 +273,28 @@ header {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .posts .post .ctn-img img {
+    width: 220px;
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .posts {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .posts .post .ctn-img img {
+    width: 300px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .posts .post .ctn-img img {
+    width: 220px;
+    height: 200px;
   }
 }
 
@@ -342,6 +357,28 @@ header {
   .posts {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .posts .post .ctn-img img {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .posts .post .ctn-img img {
+    width: 250px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .posts .post .ctn-img img {
+    width: 270px;
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -402,5 +439,75 @@ header {
 
   .posts {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .posts .post .ctn-img img {
+    width: 420px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-all {
+    transition: all 300ms;
+  }
+
+  .move-container-all {
+    transform: translateX(220px);
+  }
+
+  .menu {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    background: #fff;
+    overflow: hidden;
+    transform: translateX(-350px);
+    box-shadow: 10px 0px 20px -25px black;
+    transition: all 300ms;
+  }
+
+  #icon-menu {
+    display: flex;
+  }
+
+  .show-lateral {
+    width: 180px;
+    transform: translateX(0px);
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    margin-left: -70px;
+  }
+
+  .menu nav ul li {
+    max-width: 200px;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .menu nav ul li a {
+    margin-top: 40px;
+    color: #858585;
+  }
+
+  .menu nav ul li a i {
+    width: 20px;
+    display: inline-block;
+    margin-right: 18px;
+  }
+
+  .posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .posts .post .ctn-img img {
+    width: 350px;
   }
 }
