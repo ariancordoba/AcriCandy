@@ -75,7 +75,7 @@ header {
 
 .menu nav ul li a {
   color: #fdfdfd;
-  transition: color 300ms;
+  transition: 0.4s;
 }
 
 .menu nav ul li a i {
@@ -83,8 +83,11 @@ header {
 }
 
 .menu nav ul li a:hover {
-  color: #cccbcb;
+  transition: 0.4s;
+  padding: 10px;
+  background-image: linear-gradient(5deg, #667eea 0%, #764ba2 100%);
   text-decoration: none;
+  border-radius: 10px;
 }
 
 #icon-menu {
@@ -171,6 +174,37 @@ header {
   padding: 6px 10px;
   background: #e8e8e8;
   cursor: default;
+}
+
+.title {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.title h3 {
+  font-size: 2.2rem;
+}
+
+.productImage {
+  margin-left: 10%;
+  width: 350px;
+}
+
+.status {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.productTitle {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  line-height: 1.2;
+  word-break: break-word;
+  font-family: "Lato", sans-serif;
 }
 
 /* ESTILOS FOOTER */
