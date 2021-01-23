@@ -7,9 +7,15 @@ div .card a {
 }
 
 .btnBuy {
+  margin-top: 15px;
   margin-left: 10%;
 }
 
 .btnDetalles {
+  margin-top: 15px;
   margin-left: 5px;
+}
+
+.accordion {
+  margin-top: 55px;
 }

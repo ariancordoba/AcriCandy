@@ -1,0 +1,60 @@
+export default {
+  productos: [
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$35.323",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Nuevo",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Nuevo",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Nuevo",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Nuevo",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Exc Estado",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Como Nuevo",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto1.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Mal Estado",
+    },
+    {
+      titulo: "Muebles bonitos y baratos",
+      img: "img/producto2.jpg",
+      precio: "$50.000",
+      descripcion: "Mueble de madera, grande a buen precio.",
+      estado: "Semi-Nuevo",
+    },
+  ],
+};
