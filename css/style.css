@@ -114,7 +114,7 @@ header {
 
 /* Productos */
 
-.container-post {
+#productos {
   max-width: 1200px;
   margin: auto;
 }
