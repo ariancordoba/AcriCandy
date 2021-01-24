@@ -26,10 +26,10 @@
             <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                        <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#"><i class="fas fa-box-open"></i>Productos</a></li>
-                        <li><a href="#"><i class="far fa-question-circle"></i>Preguntas Frecuentes</a></li>
-                        <li><a href="#"><i class="fas fa-headset"></i>Contacto</a></li>
+                        <li><a href="#inicio" id="btn-inicio"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="#products" id="btn-productos"><i class="fas fa-box-open"></i>Productos</a></li>
+                        <li><a href="#preguntas" id="-btn-preguntas"><i class="far fa-question-circle"></i>Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" id="btn-contacto"><i class="fas fa-headset"></i>Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +41,7 @@
     </header>
 
     <div class="container-all" id="move-content">
-        <main class="container">
+        <main class="container" id="inicio">
             <div class="row">
                 <div class="col">
                     <div class="carousel slide" id="slideshow" data-ride="carousel">
@@ -63,7 +63,7 @@
                             </div>
 
                             <div class="carousel-item">
-                                <img src="img/s3.jpg" class="d-block w-100" alt="">
+                                <img src="img/s1.jpg" class="d-block w-100" alt="">
                             </div>
                         </div>
 
@@ -80,424 +80,14 @@
                 </div>
             </div>
 
-            <div class="title">
+            <div class="title" id="products">
                 <h3>Productos</h3>
             </div>
 
-            <div id="productos">
-
-
-
-            </div>
-
-            <!-- <div class="container-post">
-                <div class="posts">
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto1.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">AcriCandy</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <img class="productImage" src="img/producto1.jpg" alt="">
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p class="status">Nuevo  |  25 vendidos</p>
-                                                    <h3 class="productTitle">Microsoft Xbox One S 1TB Fortnite Battle Royale Special Edition violeta gradiente.</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto2.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#arian">Comprar</button>
-                        <div class="modal fade" id="arian" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>hola.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto3.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto4.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto5.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto6.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto7.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-
-                    <div class="post">
-                        <div class="ctn-img">
-                            <img src="img/producto8.jpg" alt="">
-                        </div>
-                        <h2>$85.000</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit, voluptas possimus a repellendus distinctio?</p>
-
-                        <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#fm-modal-grid">Comprar</button>
-                        <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="">GRID</h5>
-                                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-        
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="modal-footer">
-                                        <button class="btn btn-success" data-dismiss="modal">Aceptar</button>
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
-                    </div>
-                </div>
-            </div> -->
+            <div id="productos"></div>
 
             <div class="title">
-                <h3>Preguntas frecuentes</h3>
+                <h3 id="preguntas">Preguntas frecuentes</h3>
             </div>
 
             <div class="accordion" id="accordionExample">
@@ -556,14 +146,14 @@
                 </div>
 
                 <div class="redes-footer">
-                    <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-                    <a href="#"><i class="far fa-handshake icon-redes-footer"></i></a>
-                    <a href="#"><i class="fab fa-youtube icon-redes-footer"></i></a>
+                    <a href="https://www.facebook.com/AcriCandy-134448183917596/" target="_BLANK"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                    <a href="https://www.instagram.com/acricandy/" target="_BLANK"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                    <a href="https://www.mercadolibre.com.ar/perfil/ACRILICOS+CANDY" target="_BLANK"><i class="far fa-handshake icon-redes-footer"></i></a>
+                    <a href="https://www.youtube.com/channel/UCI_73oUK0NPZheixRqlcOnA" target="_BLANK"><i class="fab fa-youtube icon-redes-footer"></i></a>
                 </div>
 
                 <hr>
-                <h4>© 2021 AcriCandy - Todos los derechos reservados.</h4>
+                <h4 id="contacto">© 2021 AcriCandy - Todos los derechos reservados.</h4>
             </footer>
         </div>
     </div>
@@ -571,6 +161,7 @@
 
 
     <script type="module" src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
