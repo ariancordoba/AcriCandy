@@ -1,5 +1,9 @@
 /* ESTILOS HEADER */
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -76,6 +80,8 @@ header {
 .menu nav ul li a {
   color: #fdfdfd;
   transition: 0.4s;
+  text-align: center;
+  align-items: center;
 }
 
 .menu nav ul li a i {
@@ -84,10 +90,7 @@ header {
 
 .menu nav ul li a:hover {
   transition: 0.4s;
-  padding: 10px;
-  background-image: linear-gradient(5deg, #667eea 0%, #764ba2 100%);
-  text-decoration: none;
-  border-radius: 10px;
+  color: #d3d3d3;
 }
 
 #icon-menu {
@@ -114,11 +117,6 @@ header {
 
 /* Productos */
 
-#productos {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .posts {
   width: 100%;
   display: grid;
@@ -133,6 +131,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 20px;
+  transition: 0.5s;
 }
 
 .posts .post .ctn-img {
@@ -205,6 +204,56 @@ header {
   line-height: 1.2;
   word-break: break-word;
   font-family: "Lato", sans-serif;
+}
+
+.priceModal {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: -3px;
+}
+
+.cuotas {
+  font-size: 18px;
+}
+
+.pagos {
+  font-size: 14px;
+  color: #3483fa;
+  display: flex;
+}
+
+.pagos:hover {
+  color: #3483fa;
+  text-decoration: none;
+}
+
+.envios {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #00a650;
+}
+
+.envioGratis {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 5px;
+  color: #00a650;
+}
+
+.costoEnvio {
+  font-size: 14px;
+  color: #3483fa;
+  display: flex;
+  margin-left: 15px;
+}
+
+.costoEnvio:hover {
+  color: #3483fa;
+  text-decoration: none;
 }
 
 /* ESTILOS FOOTER */

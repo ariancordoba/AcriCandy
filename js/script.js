@@ -19,6 +19,7 @@ function productInfo(i, product) {
       <img src="${product.img}" alt="">
   </div>
   <h2>${product.precio}</h2>
+  <h4 class="envioGratis">Envío gratis</h4>
   <p>${product.descripcion}</p>
   <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#modal_${i}">Comprar</button>
   <div class="modal fade" id="modal_${i}" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
@@ -40,13 +41,19 @@ function productInfo(i, product) {
                           <div class="col-12 col-sm-6">
                               <p class="status">${product.estado}</p>
                               <h3 class="productTitle">${product.titulo}</h3>
+                              <h3 class="priceModal">${product.precio}</h3>
+                              <span class="cuotas">${product.cuotas}</span>
+                              <a class="pagos" href="https://articulo.mercadolibre.com.ar/noindex/services/MLA689524676/payments?controlled=true" target="_BLANK">Ver los medios de pago</a>
+                              <h4 class="envios"><i class="fas fa-truck"></i>  Envios gratis a todo el pais</h4>
+                              <p class="status"> BURZACO, Buenos Aires</p>
+                              <a class="costoEnvio" href="https://articulo.mercadolibre.com.ar/noindex/services/MLA689524676/shipping?controlled=true" target="_BLANK">Ver los costos de envio</a>
                           </div>
                       </div>
                   </div>
               </div>
 
               <div class="modal-footer">
-                  <a class="btn btn-success" target="_blank"  href="https://mercadolibre.com">Comprar en mercado libre</a>
+                  <a class="btn btn-success" target="_blank"  href="https://www.mercadolibre.com.ar/">Comprar en mercado libre</a>
                   <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
               </div>
           </div>
