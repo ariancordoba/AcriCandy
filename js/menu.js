@@ -5,4 +5,8 @@ function mostrar_menu() {
     .getElementById("move-content")
     .classList.toggle("move-container-all");
   document.getElementById("show-menu").classList.toggle("show-lateral");
+
+  if (object.addEventListener("click", ocultar)) {
+    mostrar_menu;
+  }
 }

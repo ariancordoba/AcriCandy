@@ -7,13 +7,16 @@ div .card a {
 }
 
 .btnBuy {
-  margin-top: 15px;
-  margin-left: 10%;
+  display: block;
+  margin: 15px;
+  margin-bottom: 0;
 }
 
 .btnDetalles {
-  margin-top: 15px;
-  margin-left: 5px;
+  margin-top: -40px;
+  margin-left: 170px;
+  display: flex;
+  position: absolute;
 }
 
 .accordion {

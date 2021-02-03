@@ -145,7 +145,6 @@ header {
 }
 
 .post h2 {
-  font-weight: 500;
   font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 1.5rem;
   margin-top: 15px;
@@ -156,23 +155,6 @@ header {
   font-size: 14px;
   margin: 0px 15px;
   line-height: normal;
-}
-
-.ctn-tag {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  /* margin-left: 16px; */
-  margin-top: 10px;
-}
-
-.ctn-tag li {
-  list-style: none;
-  font-size: 14px;
-  margin: 5px;
-  padding: 6px 10px;
-  background: #e8e8e8;
-  cursor: default;
 }
 
 .title {
@@ -254,6 +236,25 @@ header {
 .costoEnvio:hover {
   color: #3483fa;
   text-decoration: none;
+}
+
+.appWhatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  width: 60px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.appWhatsapp img {
+  width: 100%;
+  height: 100%;
+}
+
+.appWhatsapp:hover {
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 /* ESTILOS FOOTER */
@@ -461,6 +462,10 @@ header {
   .posts .post .ctn-img img {
     width: 270px;
     height: 250px;
+  }
+
+  .informacion {
+    margin-top: 10px;
   }
 }
 

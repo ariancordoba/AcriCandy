@@ -11,25 +11,30 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- <link rel="stylesheet" href="/css/node_modules/animate.css/animate.css"> -->
     <title>AcriCandy</title>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
+            <div class="logo animate__animated animate__fadeInDown">
                 <a href="index.html">
                   <h2>AcriCandy</h2>
                 </a>
             </div>
 
             <div class="menu" id="show-menu">
-                <nav>
+                <nav class="animate__animated animate__fadeInDown">
                     <ul>
-                        <li><a href="#" id="btn-inicio"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#products" id="btn-productos"><i class="fas fa-box-open"></i>Productos</a></li>
-                        <li><a href="#preguntas" id="-btn-preguntas"><i class="far fa-question-circle"></i>Preguntas Frecuentes</a></li>
-                        <li><a href="#contacto" id="btn-contacto"><i class="fas fa-headset"></i>Contacto</a></li>
+                        <li><a href="#" onclick="ocultar" id="btn-inicio"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="#products" onclick="ocultar" id="btn-productos"><i class="fas fa-box-open"></i>Productos</a></li>
+                        <li><a href="#preguntas" onclick="ocultar" id="-btn-preguntas"><i class="far fa-question-circle"></i>Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto" onclick="ocultar" id="btn-contacto"><i class="fas fa-headset"></i>Contacto</a></li>
                     </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
                 </nav>
             </div>
 
@@ -42,7 +47,7 @@
         <main class="container" id="inicio">
             <div class="row">
                 <div class="col">
-                    <div class="carousel slide" id="slideshow" data-ride="carousel">
+                    <div class="carousel slide animate__animated animate__fadeIn animate__delay-800ms" id="slideshow" data-ride="carousel">
                         <!-- Indicadores -->
                         <ol class="carousel-indicators">
                             <li data-target="#slideshow" class="active" data-slide-to="0"></li>
@@ -79,10 +84,12 @@
             </div>
 
             <div class="title" id="products">
-                <h3>Productos</h3>
+                <h3 class="animate__animated animate__fadeInDown">Productos</h3>
             </div>
 
-            <div id="productos"></div>
+            <div id="categories"></div>
+
+            <div id="productos" class="animate__animated animate__fadeInLeftBig animate__delay-1s"></div>
 
             <div class="title">
                 <h3 id="preguntas">Preguntas frecuentes</h3>
@@ -93,14 +100,14 @@
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
+                        #1 Tiempo de entrega
                       </button>
                     </h2>
                   </div>
               
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      Existen dos tipos de producto, los que tienen entrega inmediata (se envían al otro dia de la compra mientras haya disponibilidad de stock) y los que son a medida y sobre pedido, que deben fabricarse y tienen una demora de 15 días como máximo. En ese caso, se paga un adelanto del 50% y el resto contra entrega o antes del envío. 
                     </div>
                   </div>
                 </div>
@@ -108,13 +115,14 @@
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
+                        #2 Modo de envío
                       </button>
                     </h2>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      Para Capital y Gran Buenos Aires: el envío tiene un valor que se debe consultar y se paga como adicional.
+                      Para los clientes del interior del país: el embalaje es sin cargo y nosotros mismos se lo despachamos al transporte que viaja a su ciudad.
                     </div>
                   </div>
                 </div>
@@ -122,20 +130,72 @@
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
+                        #3 Embalaje
                       </button>
                     </h2>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      Tenemos mucha experiencia despachando productos a todo el país y sabemos como embalarlo para que lleguen intactos. No lo cobramos como un adicional.
                     </div>
                   </div>
                 </div>
               </div>
 
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      #4 Garantia
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Los productos tienen una garantía de 6 meses que cubre defectos de fabricación o cualquier tipo de rotura que se produzca por el buen uso.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      #5 Forma de pago
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Se puede pagar por transferencia bancaria, efectivo, mercado pago o tarjeta de crédito.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      #6 ¿Cómo puedo comunicarme para comprar un producto o si tengo otra duda?
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    La mejor manera para comunicarse es a través de whatsapp. Tél: 011 1533131230
+                  </div>
+                </div>
+              </div>
+            </div>
         </main>
 
+
+        <a href="https://api.whatsapp.com/send?phone=+5491134248489&text=Hola!&nbsp;Tengo&nbsp;una&nbsp;duda..." target="_BLANK" class="appWhatsapp">
+          <img src="img/whatsapp.svg" alt="whatsapp">
+        </a>
         <div class="container-footer">
             <footer>
                 <div class="logo-footer">
