@@ -19,11 +19,9 @@ function productInfo(i, product) {
       <img src="${product.img}" alt="">
   </div>
   <h2>${product.precio}</h2>
-  <h4 class="envioGratis">Envío gratis</h4>
-  <p>${product.descripcion}</p>
-  <button class="btn btn-sm btn-success btnBuy" data-toggle="modal" data-target="#modal_${i}">Comprar</button>
+  <button class="btn btn-sm btn-dark btnDetalles" data-toggle="modal" data-target="#modal_${i}">Detalles</button>
   <div class="modal fade" id="modal_${i}" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
           <div class="modal-content">
               <div class="modal-header">
                   <h5 class="modal-title" id="">AcriCandy</h5>
@@ -36,9 +34,9 @@ function productInfo(i, product) {
                   <div class="container-fluid">
                       <div class="row">
                           <div class="col-12 col-sm-6">
-                              <img class="productImage" src="${product.img}" alt="">
+                          <iframe width="510" height="315" src="${product.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </div>
-                          <div class="col-12 col-sm-6">
+                          <div class="col-12 col-sm-6 informacion">
                               <p class="status">${product.estado}</p>
                               <h3 class="productTitle">${product.titulo}</h3>
                               <h3 class="priceModal">${product.precio}</h3>
@@ -59,7 +57,11 @@ function productInfo(i, product) {
           </div>
       </div>
   </div>
+  <h4 class="envioGratis">Envío gratis</h4>
+  <p>${product.descripcion}</p>
   
-  <a href="#" class="btn btn-sm btn-dark btnDetalles">Detalles</a>
+  
+  <a href="https://www.mercadolibre.com.ar/" class="btn btn-sm btn-success btnBuy" target="_BLANK">Comprar en Mercado Libre</a>
+  <a href="https://www.tiendanube.com/" class="btn btn-sm btn-info btnBuy" target="_BLANK">Tienda Nube (15% Descuento)</a>
 </div>`;
 }

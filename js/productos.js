@@ -56,6 +56,7 @@ export default {
         "Para los elementos de seguridad e higiene,20cm de ANCHO, 35cm de ALTO y 20cm de PROFUNDIDAD.",
       estado: "Mal Estado",
       cuotas: "en 12 x $2500",
+      video: "https://www.youtube.com/embed/frJDr6-L0es",
     },
     {
       titulo: "Muebles bonitos y baratos",
