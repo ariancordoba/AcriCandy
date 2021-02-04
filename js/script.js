@@ -34,7 +34,8 @@ function productInfo(i, product) {
                   <div class="container-fluid">
                       <div class="row">
                           <div class="col-12 col-sm-6">
-                          <iframe width="510" height="315" src="${product.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <img src="${product.img}" class="productImage" alt="">
+                          <iframe width="510" height="315" src="${product.video}" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </div>
                           <div class="col-12 col-sm-6 informacion">
                               <p class="status">${product.estado}</p>
@@ -45,6 +46,8 @@ function productInfo(i, product) {
                               <h4 class="envios"><i class="fas fa-truck"></i>  Envios gratis a todo el pais</h4>
                               <p class="status"> BURZACO, Buenos Aires</p>
                               <a class="costoEnvio" href="https://articulo.mercadolibre.com.ar/noindex/services/MLA689524676/shipping?controlled=true" target="_BLANK">Ver los costos de envio</a>
+                              <p class="titleDescription">Descripción</p>
+                              <p class="modalDescription">${product.descripcion}</p>
                           </div>
                       </div>
                   </div>
