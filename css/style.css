@@ -169,6 +169,8 @@ header {
 .productImage {
   /* margin-left: 10%; */
   width: 350px;
+  border-radius: 5px;
+  margin: 50px 0px 25px 60px;
 }
 
 .status {
@@ -238,6 +240,18 @@ header {
   text-decoration: none;
 }
 
+.informacion .titleDescription {
+  color: #000;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.informacion .modalDescription {
+  color: #353535;
+  font-size: 1rem;
+}
+
 .appWhatsapp {
   position: fixed;
   right: 25px;
@@ -255,6 +269,11 @@ header {
 .appWhatsapp:hover {
   opacity: 0.8;
   transition: 0.3s;
+}
+
+iframe {
+  margin-top: 50px;
+  border-radius: 10px;
 }
 
 /* ESTILOS FOOTER */
