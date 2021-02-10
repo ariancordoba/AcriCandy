@@ -7,6 +7,7 @@ export default {
       descripcion: "60cm de ANCHO, 30cm de PROFUNDIDAD Y 70cm de ALTO",
       estado: "Nuevo | 20 vendidos",
       cuotas: "en 12 x $2000",
+      categoria: "golosinas",
     },
     {
       titulo: "Caramelera C/mueble Golosinakiosco Acricandy",
@@ -15,6 +16,7 @@ export default {
       descripcion: "170cm de ANCHO, 95cm PROFUNDIDAD, 20 DIVISIONES.",
       estado: "Nuevo | 5 vendidos",
       cuotas: "en 12 x $2500",
+      categoria: "golosinas",
     },
     {
       titulo: "Muebles bonitos y baratos",
@@ -23,6 +25,7 @@ export default {
       descripcion: "Mueble de madera, grande a buen precio.",
       estado: "Nuevo",
       cuotas: "en 12 x $2500",
+      categoria: "golosinas",
     },
     {
       titulo: "Muebles bonitos y baratos",
@@ -31,6 +34,7 @@ export default {
       descripcion: "Mueble de madera, grande a buen precio.",
       estado: "Nuevo",
       cuotas: "en 12 x $2500",
+      categoria: "higiene",
     },
     {
       titulo: "Muebles bonitos y baratos",
@@ -39,6 +43,7 @@ export default {
       descripcion: "Mueble de madera, grande a buen precio.",
       estado: "Exc Estado",
       cuotas: "en 12 x $2500",
+      categoria: "higiene",
     },
     {
       titulo: "Muebles bonitos y baratos",
@@ -47,6 +52,7 @@ export default {
       descripcion: "Mueble de madera, grande a buen precio.",
       estado: "Como Nuevo",
       cuotas: "en 12 x $2500",
+      categoria: "higiene",
     },
     {
       titulo: "Dispenser Barbijos Cofias Guantes Descartables Acricandy",
@@ -56,6 +62,7 @@ export default {
         "Para los elementos de seguridad e higiene,20cm de ANCHO, 35cm de ALTO y 20cm de PROFUNDIDAD.",
       estado: "Mal Estado",
       cuotas: "en 12 x $2500",
+      categoria: "dietetica",
       video: "https://www.youtube.com/embed/frJDr6-L0es",
     },
     {
@@ -65,6 +72,7 @@ export default {
       descripcion: "Mueble de madera, grande a buen precio.",
       estado: "Semi-Nuevo",
       cuotas: "en 12 x $2500",
+      categoria: "dietetica",
     },
   ],
 };

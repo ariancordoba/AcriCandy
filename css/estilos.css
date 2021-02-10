@@ -22,3 +22,33 @@ div .card a {
 .accordion {
   margin-top: 55px;
 }
+
+@media screen and (max-width: 1200px) {
+  .btnDetalles {
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btnDetalles {
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .btnDetalles {
+    margin-left: 260px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .btnDetalles {
+    margin-left: 220px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btnDetalles {
+    margin-left: 200px;
+  }
+}

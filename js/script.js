@@ -14,17 +14,17 @@ function renderProducts({ productos }) {
 }
 
 function productInfo(i, product) {
-  return `<div class="post">
+  return `<div class="post" category="${product.categoria}">
   <div class="ctn-img">
       <img src="${product.img}" alt="">
   </div>
   <h2>${product.precio}</h2>
   <button class="btn btn-sm btn-dark btnDetalles" data-toggle="modal" data-target="#modal_${i}">Detalles</button>
   <div class="modal fade" id="modal_${i}" tabindex="-1" role="dialog" aria-labelledby="fm-modal-grid" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-dialog  modal-xl modal-dialog-scrollable">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title" id="">AcriCandy</h5>
+                  <h5 class="modal-title">AcriCandy</h5>
                   <button class="close" data-dismiss="modal" aria-label="Cerrar">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -33,11 +33,10 @@ function productInfo(i, product) {
               <div class="modal-body">
                   <div class="container-fluid">
                       <div class="row">
-                          <div class="col-12 col-sm-6">
-                          <img src="${product.img}" class="productImage" alt="">
-                          <iframe width="510" height="315" src="${product.video}" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="col-12 col-sm-5 productImage">
+                          <img src="${product.img}" alt="">
                           </div>
-                          <div class="col-12 col-sm-6 informacion">
+                          <div class="col-12 col-sm-5 informacion">
                               <p class="status">${product.estado}</p>
                               <h3 class="productTitle">${product.titulo}</h3>
                               <h3 class="priceModal">${product.precio}</h3>
@@ -48,6 +47,7 @@ function productInfo(i, product) {
                               <a class="costoEnvio" href="https://articulo.mercadolibre.com.ar/noindex/services/MLA689524676/shipping?controlled=true" target="_BLANK">Ver los costos de envio</a>
                               <p class="titleDescription">Descripción</p>
                               <p class="modalDescription">${product.descripcion}</p>
+                              <iframe width="510" height="315" src="${product.video}" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           </div>
                       </div>
                   </div>
