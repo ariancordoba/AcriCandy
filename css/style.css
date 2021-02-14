@@ -53,66 +53,8 @@ header {
   margin-left: 50px;
 }
 
-.menu {
-  height: 80px;
-  margin-right: 40px;
-}
-
-.menu nav {
-  height: 100%;
-}
-
-.menu nav ul {
-  height: 100%;
-  display: flex;
-  list-style: none;
-}
-
-.menu nav ul li {
-  height: 100%;
-  margin: 0px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.menu nav ul li a {
-  color: #fdfdfd;
-  transition: 0.4s;
-  text-align: center;
-  align-items: center;
-}
-
-.menu nav ul li a i {
-  margin: 5px;
-}
-
-.menu nav ul li a:hover {
-  transition: 0.4s;
-  color: #d3d3d3;
-}
-
-#icon-menu {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  padding: 10px;
-  font-size: 20px;
-  background: #fafafa;
-  border-radius: 100%;
-  color: #787878;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  display: none;
-}
-
-#icon-menu:hover {
-  opacity: 0.8;
+.btn-menu {
+  background-color: #ffffff;
 }
 
 /* Productos */
@@ -450,57 +392,6 @@ iframe {
     overflow-x: hidden;
   }
 
-  .container-all {
-    transition: all 300ms;
-  }
-
-  .move-container-all {
-    transform: translateX(300px);
-  }
-
-  .menu {
-    width: 0px;
-    height: 100vh;
-    position: fixed;
-    top: 80px;
-    background: #fff;
-    overflow: hidden;
-    transform: translateX(-350px);
-    box-shadow: 10px 0px 20px -25px black;
-    transition: all 300ms;
-  }
-
-  #icon-menu {
-    display: flex;
-  }
-
-  .show-lateral {
-    width: 250px;
-    transform: translateX(0px);
-  }
-
-  .menu nav ul {
-    flex-direction: column;
-    margin-left: -50px;
-  }
-
-  .menu nav ul li {
-    max-width: 200px;
-    height: 50px;
-    justify-content: center;
-  }
-
-  .menu nav ul li a {
-    margin-top: 40px;
-    color: #858585;
-  }
-
-  .menu nav ul li a i {
-    width: 20px;
-    display: inline-block;
-    margin-right: 18px;
-  }
-
   .posts {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -559,57 +450,6 @@ iframe {
     overflow-x: hidden;
   }
 
-  .container-all {
-    transition: all 300ms;
-  }
-
-  .move-container-all {
-    transform: translateX(220px);
-  }
-
-  .menu {
-    width: 0px;
-    height: 100vh;
-    position: fixed;
-    top: 80px;
-    background: #fff;
-    overflow: hidden;
-    transform: translateX(-350px);
-    box-shadow: 10px 0px 20px -25px black;
-    transition: all 300ms;
-  }
-
-  #icon-menu {
-    display: flex;
-  }
-
-  .show-lateral {
-    width: 180px;
-    transform: translateX(0px);
-  }
-
-  .menu nav ul {
-    flex-direction: column;
-    margin-left: -70px;
-  }
-
-  .menu nav ul li {
-    max-width: 200px;
-    height: 50px;
-    justify-content: center;
-  }
-
-  .menu nav ul li a {
-    margin-top: 40px;
-    color: #858585;
-  }
-
-  .menu nav ul li a i {
-    width: 20px;
-    display: inline-block;
-    margin-right: 18px;
-  }
-
   .posts {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -628,57 +468,6 @@ iframe {
 @media screen and (max-width: 380px) {
   body {
     overflow-x: hidden;
-  }
-
-  .container-all {
-    transition: all 300ms;
-  }
-
-  .move-container-all {
-    transform: translateX(220px);
-  }
-
-  .menu {
-    width: 0px;
-    height: 100vh;
-    position: fixed;
-    top: 80px;
-    background: #fff;
-    overflow: hidden;
-    transform: translateX(-350px);
-    box-shadow: 10px 0px 20px -25px black;
-    transition: all 300ms;
-  }
-
-  #icon-menu {
-    display: flex;
-  }
-
-  .show-lateral {
-    width: 180px;
-    transform: translateX(0px);
-  }
-
-  .menu nav ul {
-    flex-direction: column;
-    margin-left: -70px;
-  }
-
-  .menu nav ul li {
-    max-width: 200px;
-    height: 50px;
-    justify-content: center;
-  }
-
-  .menu nav ul li a {
-    margin-top: 40px;
-    color: #858585;
-  }
-
-  .menu nav ul li a i {
-    width: 20px;
-    display: inline-block;
-    margin-right: 18px;
   }
 
   .posts {
