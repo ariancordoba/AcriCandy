@@ -3,6 +3,8 @@ export default {
     {
       titulo: "Caramelera Tipo Bota De 70cm De Alto 5 Divisiones Acricandy",
       img: "img/producto1.jpg",
+      img2: "img/producto6.jpg",
+      img3: "img/producto7.jpg",
       precio: "$ 24.900",
       descripcion: "60cm de ANCHO, 30cm de PROFUNDIDAD Y 70cm de ALTO",
       estado: "Nuevo | 20 vendidos",

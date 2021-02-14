@@ -27,28 +27,26 @@
 
             <div class="menu" id="show-menu">
                 <nav class="animate__animated animate__fadeInDown">
-                    <ul>
-                        <li><a href="#" id="btn-inicio"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#products" id="btn-productos"><i class="fas fa-box-open"></i>Productos</a></li>
-                        <li><a href="#preguntas" id="-btn-preguntas"><i class="far fa-question-circle"></i>Preguntas Frecuentes</a></li>
-                        <li><a href="#contacto" id="btn-contacto"><i class="fas fa-headset"></i>Contacto</a></li>
+                  <div class="dropdown">
+                    <button class="btn btn-menu px-3 mt-3" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Inicio</a></li>
+                      <li><a class="dropdown-item" href="#products">Productos</a></li>
+                      <li><a class="dropdown-item" href="#preguntas">Preguntas Frecuentes</a></li>
+                      <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
                     </ul>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </div>
                 </nav>
             </div>
-
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
-    <div class="container-all" id="move-content">
+    <div class="container-all">
         <main class="container">
             <div class="row">
                 <div class="col">
-                    <div class="carousel slide animate__animated animate__fadeIn animate__delay-9ms" id="slideshow" data-ride="carousel">
+                    <div class="carousel slide carousel-fade animate__animated animate__fadeIn animate__delay-9ms" id="slideshow" data-ride="carousel">
                         <!-- Indicadores -->
                         <ol class="carousel-indicators">
                             <li data-target="#slideshow" class="active" data-slide-to="0"></li>
