@@ -1,6 +1,8 @@
 $(document).ready(function () {
   // AGREGANDO CLASE ACTIVE...
-  $('.category_list .category_item[category="all"]').addClass("ct_item-active");
+  $('.category_list .category_item[category="dietetica"]').addClass(
+    "ct_item-active"
+  );
 
   $(".category_item").click(function () {
     var catProduct = $(this).attr("category");
@@ -16,7 +18,7 @@ $(document).ready(function () {
   });
 
   // MOSTRANDO TODOS LOS PRODUCTOS...
-  $('.category_item[category="all"]').click(function () {
+  $('.category_item[category="dietetica"]').click(function () {
     $(".post").show();
   });
 });
